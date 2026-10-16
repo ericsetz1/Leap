@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact | Leap Pediatric Therapy</title>
+  <meta name="description" content="Contact Leap Pediatric Therapy with questions about pediatric physical therapy, insurance, or scheduling." />
+  <meta property="og:title" content="Contact | Leap Pediatric Therapy" />
+  <meta property="og:description" content="Contact Leap Pediatric Therapy with questions about pediatric physical therapy, insurance, or scheduling." />
+  <meta property="og:image" content="/images/leap-logo.jpg" />
+  <meta name="theme-color" content="#729fc2" />
+  <link rel="icon" type="image/png" href="/favicon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Montserrat:wght@500;600&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/css/styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="/" aria-label="Leap Pediatric Therapy home"><img src="/images/leap-logo.jpg" alt="Leap Pediatric Therapy — move, play, grow" width="845" height="475" /></a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="nav-links">Menu</button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="/">Home</a></li>
+        <li><a href="/about">Our Team</a></li>
+        <li><a href="/services">Services</a></li>
+        <li><a href="/book">Book & Billing</a></li>
+        <li><a href="/contact" aria-current="page">Contact</a></li>
+        <li><a class="btn btn-primary" href="https://leappediatrictherapy.janeapp.com" data-jane>Book Now</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="container">
+        <span class="eyebrow">Contact</span>
+        <h1>Let's talk about your child</h1>
+        <p>Have a question about physical therapy, insurance, or whether we're the right fit? Send us a message and we'll get back to you within one business day.</p>
+      </div>
+    </section>
+
+    <section style="padding-top:1rem">
+      <div class="container grid grid-2" style="grid-template-columns:1.4fr 1fr;gap:3rem;align-items:start">
+        <div class="form-card">
+          <form name="contact" method="POST" action="/thank-you" data-netlify="true" netlify-honeypot="bot-field">
+            <input type="hidden" name="form-name" value="contact" />
+            <input type="hidden" name="subject" value="New inquiry from the Leap website" />
+            <p class="hidden"><label>Don't fill this out: <input name="bot-field" /></label></p>
+            <div class="form-grid">
+              <div>
+                <label for="name">Parent / guardian name</label>
+                <input id="name" name="name" autocomplete="name" required />
+              </div>
+              <div>
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email" autocomplete="email" required />
+              </div>
+              <div>
+                <label for="phone">Phone <span class="optional">(optional)</span></label>
+                <input id="phone" name="phone" type="tel" autocomplete="tel" />
+              </div>
+              <div>
+                <label for="child-age">Child's age <span class="optional">(optional)</span></label>
+                <input id="child-age" name="child-age" placeholder="e.g. 18 months" />
+              </div>
+              <div>
+                <label for="topic">I'm interested in</label>
+                <select id="topic" name="topic">
+                  <option>A free phone consultation</option>
+                  <option>Scheduling an evaluation</option>
+                  <option>Insurance &amp; billing</option>
+                  <option>General question</option>
+                </select>
+              </div>
+              <div>
+                <label for="contact-method">Best way to reach me</label>
+                <select id="contact-method" name="contact-method">
+                  <option>Email</option>
+                  <option>Phone call</option>
+                  <option>Text message</option>
+                </select>
+              </div>
+              <div class="full">
+                <label for="message">How can we help?</label>
+                <textarea id="message" name="message" required></textarea>
+              </div>
+            </div>
+            <p class="form-note">Please don't include detailed medical information here. Once you book, you can share health history securely through your Jane intake forms.</p>
+            <button class="btn btn-primary" type="submit">Send message</button>
+          </form>
+        </div>
+        <aside>
+          <ul class="contact-list">
+            <li><span class="icon" aria-hidden="true">📞</span><span><strong>Phone</strong><a href="tel:+15555555555">(555) 555-5555</a></span></li>
+            <li><span class="icon" aria-hidden="true">✉️</span><span><strong>Email</strong><a href="mailto:hello@leappediatrictherapy.com">hello@leappediatrictherapy.com</a></span></li>
+            <li><span class="icon" aria-hidden="true">📍</span><span><strong>Clinic</strong>[Street Address]<br />[City, State ZIP]</span></li>
+            <li><span class="icon" aria-hidden="true">🕘</span><span><strong>Hours</strong>Mon–Thu 8am–6pm<br />Fri 8am–2pm<br />Sat by appointment</span></li>
+          </ul>
+          <div class="card bg-leaf" style="border:0">
+            <h3>Ready to book?</h3>
+            <p>Skip the wait and choose a time online.</p>
+            <a class="btn btn-green" href="https://leappediatrictherapy.janeapp.com" data-jane>Book with Jane</a>
+          </div>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <p class="footer-tagline">move · play · grow</p>
+          <p>Leap Pediatric Therapy provides playful, evidence-based physical therapy for infants, children, and teens.</p>
+        </div>
+        <div>
+          <h3>Visit</h3>
+          <ul>
+            <li>[Street Address]</li>
+            <li>[City, State ZIP]</li>
+            <li><a href="tel:+15555555555">(555) 555-5555</a></li>
+            <li><a href="mailto:hello@leappediatrictherapy.com">hello@leappediatrictherapy.com</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Families</h3>
+          <ul>
+            <li><a href="https://leappediatrictherapy.janeapp.com" data-jane>Book an appointment</a></li>
+            <li><a href="https://leappediatrictherapy.janeapp.com" data-jane>Patient portal &amp; payments</a></li>
+            <li><a href="/book#billing">Billing &amp; insurance</a></li>
+            <li><a href="/contact">Ask us a question</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">© <span data-year>2026</span> Leap Pediatric Therapy. All rights reserved. This website is for general information and is not a substitute for professional medical advice.</div>
+    </div>
+  </footer>
+  <script src="/js/site.js" defer></script>
+</body>
+</html>
